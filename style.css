@@ -1,0 +1,90 @@
+/*
+* File: style.css
+* Author: Béres Délia
+* Copyright: 2022, Béres Délia
+* Group: SZOFT 1/I/E
+* Date: 2022.11.20
+* Github: 
+* Licenc: GNU GPL
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bac5dd;
+}
+#container {
+    width: 1312px;
+    margin: 0px auto;
+    font-family: sans-serif;
+}
+.header {
+    height: 580px;
+    background: url(./img/picture1.jpg);
+}
+.header h1 {
+    padding-top: 30%;
+    padding-left: 33%;
+    font-size: 4.2em;
+	color: white;
+}
+.navbar {
+    height: 4.5em;
+    background-color: #5473b4;
+}
+.navbar li {
+    width: 19.5%;
+    display: inline-block;
+    list-style-type: none;
+	font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 26px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover {
+	color: black;
+}
+.row {
+    height: 492px;
+}
+.row .left {
+    margin-right: 1em;
+    width: 656px;
+    float: left;
+}
+.row .right {
+    margin-left: 1em;
+    width: 656px;
+    float: right;
+}
+.left::after, .right::after {
+	content: "";
+	clear: both;
+    display: table;
+}
+.content {
+    background-color: lightgray;
+}
+.content p {
+    padding: 11px;
+    color: black;
+    line-height: 1.7;
+    font-size: 14px;
+    text-align: justify;
+}
+.footer {
+    background-color: white;
+    height: 180px;
+}
+.footer p {
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+}
